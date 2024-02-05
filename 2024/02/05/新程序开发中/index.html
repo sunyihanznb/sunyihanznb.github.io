@@ -12,7 +12,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>归档 |  sunnb的网站</title>
+      <title>新程序开发中 |  sunnb的网站</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -56,273 +56,203 @@
       
     <main class="content on">
       <section class="outer">
-  
-  <ul class="ads">
+  <article
+  id="post-新程序开发中"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
     
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  新程序开发中
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2024/02/05/%E6%96%B0%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E4%B8%AD/" class="article-date">
+  <time datetime="2024-02-05T03:16:26.000Z" itemprop="datePublished">2024-02-05</time>
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">135</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">1 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>py<br>
+|<a target="_blank" rel="noopener" href="http://main.py">main.py</a></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#组件导入</span></span><br><span class="line"><span class="keyword">import</span> tkinter <span class="keyword">as</span> tk</span><br><span class="line"><span class="keyword">from</span> tkinter <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">from</span> tkinter <span class="keyword">import</span> messagebox</span><br><span class="line"></span><br><span class="line"><span class="comment">#窗口初始化</span></span><br><span class="line">root=tk.Tk()</span><br><span class="line">root.geometry(<span class="string">&quot;300x400&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#label（标题）初始化</span></span><br><span class="line">title=Label(root,text=<span class="string">&quot;隐藏你的文件&quot;</span>)</span><br><span class="line">title.pack(side=TOP)</span><br><span class="line"></span><br><span class="line"><span class="comment">#输入框初始化</span></span><br><span class="line">into=Entry(root)</span><br><span class="line">into.pack(side=TOP)</span><br><span class="line">into.insert(<span class="number">0</span>,<span class="string">&quot;输入文件路径..&quot;</span>)</span><br><span class="line">yes_to_into=Button(root,text=<span class="string">&quot;确定&quot;</span>)</span><br><span class="line">yes_to_into.pack(side=TOP)</span><br><span class="line"></span><br><span class="line"><span class="comment">#yes_to_into事件绑定</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">return_into</span>(<span class="params">event</span>):</span><br><span class="line">    gets=into.get()</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(gets)&gt;<span class="number">0</span>:</span><br><span class="line">        into_string=gets</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        messagebox.showerror(<span class="string">&#x27;警告&#x27;</span>,<span class="string">&#x27;未填写路径&#x27;</span>)</span><br><span class="line">yes_to_into.bind(<span class="string">&quot;&lt;Button-1&gt;&quot;</span>,return_into)</span><br><span class="line"></span><br><span class="line"><span class="comment">#窗口循环</span></span><br><span class="line">root.mainloop()</span><br></pre></td></tr></table></figure> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
         <li>
-            <a href="">
-                <img src="" width="" alt="">
-            </a>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
         </li>
-    
-        <li>
-            <a href="">
-                <img src="" width="" alt="">
-            </a>
-        </li>
-    
-</ul>
-  
-  
-  <article class="articles">
-    
-    
-    <h1 class="page-type-title">归档</h1>
-    
-    
-  
-  
-  
-  
-  
-  
-  <div class="archives-wrap">
-    <div class="archive-year-wrap">
-      <a href="/archives/2024" class="archive-year">2024</a>
+      </ul>
     </div>
-    <div class="archives">
-      
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2024/02/05/%E6%96%B0%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E4%B8%AD/" class="archive-article-date">
-  <time datetime="2024-02-05T03:16:26.000Z" itemprop="datePublished">02/05</time>
-</a>
+    
+    <footer class="article-footer">
        
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2024/02/05/%E6%96%B0%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E4%B8%AD/"
-    >新程序开发中</a> 
-</h2>
- 
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
 
-    </header>
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2024/02/05/%E9%92%89%E9%92%89%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/" class="archive-article-date">
-  <time datetime="2024-02-05T03:05:51.000Z" itemprop="datePublished">02/05</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2024/02/05/%E9%92%89%E9%92%89%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/"
-    >钉钉规则类怪谈</a> 
-</h2>
- 
-
-    </header>
-    
-    
-  </div>
-</article>
-      
-  
-  
-  
-  </div>
-  </div>
-  
-  
-  <div class="archives-wrap">
-    <div class="archive-year-wrap">
-      <a href="/archives/2023" class="archive-year">2023</a>
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2024/02/05/%E6%96%B0%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E4%B8%AD/" alt="微信分享二维码">
     </div>
-    <div class="archives">
-      
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/12/23/That-eyes/" class="archive-article-date">
-  <time datetime="2023-12-23T04:25:53.000Z" itemprop="datePublished">12/23</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2023/12/23/That-eyes/"
-    >That eyes</a> 
-</h2>
- 
+</div>
 
-    </header>
-    
-    
+<div id="share-mask"></div>  
+    </footer>
   </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/12/01/%E5%A5%87%E6%80%9D%E4%B8%8E%E5%A6%99%E6%83%B3%E4%B9%8B%E4%B8%89%E7%8F%AD%E4%BC%A0%E5%A5%87%E7%AC%AC%E4%B8%80%E7%AB%A0-%E7%AC%AC%E4%B8%89%E7%AB%A0/" class="archive-article-date">
-  <time datetime="2023-12-01T13:25:30.000Z" itemprop="datePublished">12/01</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2023/12/01/%E5%A5%87%E6%80%9D%E4%B8%8E%E5%A6%99%E6%83%B3%E4%B9%8B%E4%B8%89%E7%8F%AD%E4%BC%A0%E5%A5%87%E7%AC%AC%E4%B8%80%E7%AB%A0-%E7%AC%AC%E4%B8%89%E7%AB%A0/"
-    >奇思与妙想之三班传奇第一章-第三章</a> 
-</h2>
- 
 
-    </header>
+   
+  <nav class="article-nav">
     
     
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/10/29/%E7%BD%91%E7%AB%991-0-0%E6%9B%B4%E6%96%B0%E5%85%AC%E5%91%8A/" class="archive-article-date">
-  <time datetime="2023-10-29T03:49:28.000Z" itemprop="datePublished">10/29</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2023/10/29/%E7%BD%91%E7%AB%991-0-0%E6%9B%B4%E6%96%B0%E5%85%AC%E5%91%8A/"
-    >网站1.0.0更新公告</a> 
-</h2>
- 
-
-    </header>
+      <a href="/2024/02/05/%E9%92%89%E9%92%89%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">钉钉规则类怪谈</div>
+      </a>
     
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/10/03/%E5%85%AC%E5%91%8A/" class="archive-article-date">
-  <time datetime="2023-10-03T05:26:14.000Z" itemprop="datePublished">10/03</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2023/10/03/%E5%85%AC%E5%91%8A/"
-    >公告</a> 
-</h2>
- 
-
-    </header>
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/08/29/%E5%AF%B9%E4%BA%8Eba%E7%9A%84%E6%84%9F%E5%8F%B9/" class="archive-article-date">
-  <time datetime="2023-08-29T07:57:50.000Z" itemprop="datePublished">08/29</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2023/08/29/%E5%AF%B9%E4%BA%8Eba%E7%9A%84%E6%84%9F%E5%8F%B9/"
-    >对于ba的感叹</a> 
-</h2>
- 
-
-    </header>
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/07/30/sunnb%E8%87%AA%E5%88%B61-19-4%E6%95%B4%E5%90%88%E5%8C%85/" class="archive-article-date">
-  <time datetime="2023-07-30T10:25:54.000Z" itemprop="datePublished">07/30</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2023/07/30/sunnb%E8%87%AA%E5%88%B61-19-4%E6%95%B4%E5%90%88%E5%8C%85/"
-    >sunnb自制1.19.4整合包</a> 
-</h2>
- 
-
-    </header>
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/07/19/%E5%A5%87%E6%80%9D%E4%B8%8E%E5%A6%99%E6%83%B3%E7%AC%AC%E4%BA%8C%E7%AB%A0/" class="archive-article-date">
-  <time datetime="2023-07-19T05:34:39.000Z" itemprop="datePublished">07/19</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2023/07/19/%E5%A5%87%E6%80%9D%E4%B8%8E%E5%A6%99%E6%83%B3%E7%AC%AC%E4%BA%8C%E7%AB%A0/"
-    >奇思与妙想第二章</a> 
-</h2>
- 
-
-    </header>
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/06/30/%E4%BF%9D%E5%AF%86%E6%96%87%E7%AB%A02/" class="archive-article-date">
-  <time datetime="2023-06-30T07:04:00.000Z" itemprop="datePublished">06/30</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2023/06/30/%E4%BF%9D%E5%AF%86%E6%96%87%E7%AB%A02/"
-    >保密文章2</a> 
-</h2>
- 
-
-    </header>
-    
-    
-  </div>
-</article>
-      
-      
-    </div>
-  </div>
-  
-  
-
-  
-  <nav class="page-nav">
-    
-    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/">下一页</a>
   </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.staticfile.org/valine/1.4.16/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "8cko9YsIu87vTlgvXNjdc8sh-gzGzoHsz",
+    app_key: "5ewY5nmJU1H62OPpYNMt2C7d",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "做这个网站真的很不容易，不如给个评论支持一下我",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+   
   
+   
+    <script src="https://cdn.staticfile.org/twikoo/1.4.18/twikoo.all.min.js"></script>
+    <div id="twikoo" class="twikoo"></div>
+    <script>
+        twikoo.init({
+            envId: ""
+        })
+    </script>
+ 
+</article>
+
 </section>
       <footer class="footer">
   <div class="outer">
@@ -455,6 +385,22 @@
 <script src="/js/lazyload.min.js"></script>
 
 <!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
 
 <script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
 <link
