@@ -169,7 +169,7 @@
     
     
     <article
-  id="post-文章投稿"
+  id="post-Markdown文档讲解"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -180,10 +180,8 @@
     <header class="article-header">
        
 <h2 itemprop="name">
-  <a class="article-title" href="/2023/06/20/%E6%96%87%E7%AB%A0%E6%8A%95%E7%A8%BF/"
-    >文章投稿
-  <i class="article-topping">置顶</i>
-</a> 
+  <a class="article-title" href="/2024/02/17/Markdown%E6%96%87%E6%A1%A3%E8%AE%B2%E8%A7%A3/"
+    >Markdown文档讲解</a> 
 </h2>
  
 
@@ -191,24 +189,134 @@
     </header>
      
     <div class="article-meta">
-      <a href="/2023/06/20/%E6%96%87%E7%AB%A0%E6%8A%95%E7%A8%BF/" class="article-date">
-  <time datetime="2023-06-20T05:06:16.000Z" itemprop="datePublished">2023-06-20</time>
+      <a href="/2024/02/17/Markdown%E6%96%87%E6%A1%A3%E8%AE%B2%E8%A7%A3/" class="article-date">
+  <time datetime="2024-02-17T13:15:00.000Z" itemprop="datePublished">2024-02-17</time>
 </a> 
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%85%AC%E5%91%8A/">公告</a>
+    <a class="article-category-link" href="/categories/%E6%AD%A3%E7%89%87/">正片</a>
   </div>
    
     </div>
       
     <div class="article-entry" itemprop="articleBody">
        
-  <h3 id="本网站开启投稿了！">本网站开启投稿了！</h3>
-<p>由于我实在是知识浅薄，建了网站不知道发什么，所以我决定开放投稿渠道，任何人都可以通过联系方式联系我，并将自己写好的文章发给我，我将在阅读并稍微修改后注明出处上传</p>
-<p>联系方式：<br>
-电话：18186575048<br>
-QQ:2188384228<br>
-wx:sunyihanznb<br>
-<a href="mailto:email:sunyihanznb@outlook.com">email:sunyihanznb@outlook.com</a></p>
+  <h2 id="表格-文本样式">表格 &amp; 文本样式</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">样式</th>
+<th>语法</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">加粗</td>
+<td>前后 <code>**</code> 或  <code>__</code></td>
+<td><strong>加粗1</strong> <strong>加粗2</strong></td>
+</tr>
+<tr>
+<td style="text-align:center">斜体</td>
+<td>前后 <code>*</code> 或  <code>_</code></td>
+<td><em>斜体1</em> <em>斜体2</em></td>
+</tr>
+<tr>
+<td style="text-align:center">删除线</td>
+<td>前后 <code>~~</code></td>
+<td><s>删除线</s></td>
+</tr>
+<tr>
+<td style="text-align:center">内联代码</td>
+<td>前后 `</td>
+<td><code>code</code></td>
+</tr>
+<tr>
+<td style="text-align:center">下划线</td>
+<td>前 <code>&lt;u&gt;</code>  后 <code>&lt;/u&gt;</code></td>
+<td><u>下划线</u></td>
+</tr>
+<tr>
+<td style="text-align:center">高亮</td>
+<td>前后 <code>==</code></td>
+<td>==高亮文本==</td>
+</tr>
+</tbody>
+</table>
+<h2 id="引用">引用</h2>
+<blockquote>
+<p>sunnb</p>
+</blockquote>
+<h2 id="链接">链接</h2>
+<p><em>鼠标右击</em> 或 <em>Ctrl 键 + 点击</em> 系统默认浏览器打开链接</p>
+<p><a target="_blank" rel="noopener" href="https://sunnb.xn--kivy66br3pu7d.top/">sunnb官网</a></p>
+<h2 id="图片">图片</h2>
+<p>拖放图片文件、粘贴截图可直接将图片源数据存储到笔记中</p>
+<p><img src="%5Cimages%5Cpack.png" alt=""></p>
+<p><em>图片可拖动为文件到任意窗口使用</em></p>
+<h2 id="无序列表">无序列表</h2>
+<ul>
+<li>项目
+<ul>
+<li>项目 1
+<ul>
+<li>项目 A</li>
+<li>项目 B</li>
+</ul>
+</li>
+<li>项目 2</li>
+</ul>
+</li>
+</ul>
+<h2 id="有序列表">有序列表</h2>
+<ol>
+<li>项目 1
+<ol>
+<li>项目 A</li>
+<li>项目 B</li>
+</ol>
+</li>
+<li>项目 2</li>
+</ol>
+<h2 id="任务列表">任务列表</h2>
+<ul>
+<li>[x] A 计划
+<ul>
+<li>[x] A1 计划</li>
+<li>[ ] A2 计划</li>
+</ul>
+</li>
+<li>[ ] B 计划</li>
+</ul>
+<h2 id="代码块">代码块</h2>
+<p>代码块支持 168 种编程语言</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// javascript 冒泡排序</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">bubbleSort</span>(<span class="params">array</span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> swapped = <span class="literal">true</span>;</span><br><span class="line">  <span class="keyword">do</span> &#123;</span><br><span class="line">    swapped = <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> j = <span class="number">0</span>; j &lt; array.<span class="property">length</span>; j++) &#123;</span><br><span class="line">      <span class="keyword">if</span> (array[j] &gt; array[j + <span class="number">1</span>]) &#123;</span><br><span class="line">        <span class="keyword">let</span> temp = array[j];</span><br><span class="line">        array[j] = array[j + <span class="number">1</span>];</span><br><span class="line">        array[j + <span class="number">1</span>] = temp;</span><br><span class="line">        swapped = <span class="literal">true</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125; <span class="keyword">while</span> (swapped);</span><br><span class="line">  <span class="keyword">return</span> array;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="KaTeX-数学公式"><a target="_blank" rel="noopener" href="https://katex.org">KaTeX</a> 数学公式</h2>
+<h3 id="内联公式">内联公式</h3>
+<p>质能方程 $E=mc^2$</p>
+<h3 id="公式块">公式块</h3>
+<p>$$<br>
+\displaystyle \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)<br>
+$$</p>
+<h1>应用介绍</h1>
+<h2 id="特性">特性</h2>
+<ol>
+<li>极佳的 Markdown 编辑体验，实时预览、存储</li>
+<li>与传统富文本编辑方式结合，支持通用快捷键</li>
+<li>可导出为 Markdown(.md文件)、html、PDF、图片</li>
+<li>可分离出多个窗口，同时编辑(参考)多个笔记</li>
+<li>可快速搜索全部笔记内容</li>
+<li>笔记名称可设置为 uTools 关键字，外围快速打开该笔记</li>
+</ol>
+<h2 id="使用技巧">使用技巧</h2>
+<ol>
+<li>左侧笔记名称，<strong>上下拖动调整位置</strong>，<em>鼠标右击</em> 显示操作菜单</li>
+<li>当焦点未在编辑器，键盘上下方向键、 <code>Tab</code> 键切换笔记</li>
+<li>当焦点未在编辑器，<code>Enter</code> 进入编辑</li>
+<li><code>Command/Ctrl+F</code> 焦点切换到搜索</li>
+<li>编辑器中列表编辑时，按 <code>Tab</code> 变子项，<code>Shift + Tab</code> 恢复</li>
+</ol>
+<h2 id="笔记数据存储位置">笔记数据存储位置</h2>
+<p>笔记内容和图片均<strong>存储在本地磁盘</strong>数据库(uTools 提供的底层数据库)，在 uTools 主程序界面「帐号与数据」中开启数据同步，则你的笔记数据将会实时同步备份到 uTools 的数据服务器</p>
  
       <!-- reward -->
       
@@ -219,7 +327,7 @@ wx:sunyihanznb<br>
     
     <footer class="article-footer">
        
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%8B%97%E5%8F%AB/" rel="tag">狗叫</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li></ul>
 
     </footer>
   </div>
@@ -416,72 +524,6 @@ wx:sunyihanznb<br>
 
     
     <article
-  id="post-That-eyes"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/12/23/That-eyes/"
-    >That eyes</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/12/23/That-eyes/" class="article-date">
-  <time datetime="2023-12-23T04:25:53.000Z" itemprop="datePublished">2023-12-23</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E7%9E%8E%E5%86%99%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/">瞎写的一些东西</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>友人，你可知你眼睛的美丽？</p>
-<p>一次偶然的相遇，让我确信，世界上最美的，是你的眼睛</p>
-<p>那吸收了所有波长的黑色眸子，在阳光下反射出灿烂的虹光；那深邃的眼神，直触我的心灵</p>
-<p>你的眼睛如那遥不可及的黑洞般，用你那巨大的引力，使光都无法逃逸</p>
-<p>你的眼睛不断扭曲着周围的时空，使我不断陷进</p>
-<p>而我突然却发现了那一束光，如奇点般使人惊喜</p>
-<p>那是情绪的赞歌，是生命的绽放！</p>
-<p>但对于我来说，却是如此的，遥不可及</p>
-<p>位于平行宇宙的我已然苏醒</p>
-<p>相对论也已经看腻</p>
-<p>但我却不曾忘记</p>
-<p>你的眼睛</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%8B%97%E5%8F%AB/" rel="tag">狗叫</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-   
-  
-</article>
-
-    
-    <article
   id="post-奇思与妙想之三班传奇第一章-第三章"
   class="article article-type-post"
   itemscope
@@ -619,189 +661,6 @@ wx:sunyihanznb<br>
 
     
     <article
-  id="post-公告"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/10/03/%E5%85%AC%E5%91%8A/"
-    >公告</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/10/03/%E5%85%AC%E5%91%8A/" class="article-date">
-  <time datetime="2023-10-03T05:26:14.000Z" itemprop="datePublished">2023-10-03</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%85%AC%E5%91%8A/">公告</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h3 id="此网站可能不会再更新《奇思与妙想》">此网站可能不会再更新《奇思与妙想》</h3>
-<p>由于某些不可抗因素，此网站将停更《奇思与妙想》，还请谅解</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%80%9A%E7%9F%A5/" rel="tag">通知</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-   
-  
-</article>
-
-    
-    <article
-  id="post-对于ba的感叹"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/08/29/%E5%AF%B9%E4%BA%8Eba%E7%9A%84%E6%84%9F%E5%8F%B9/"
-    >对于ba的感叹</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/08/29/%E5%AF%B9%E4%BA%8Eba%E7%9A%84%E6%84%9F%E5%8F%B9/" class="article-date">
-  <time datetime="2023-08-29T07:57:50.000Z" itemprop="datePublished">2023-08-29</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E7%9E%8E%E5%86%99%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/">瞎写的一些东西</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>最近蔚蓝档案国服不是出了嘛（虽然好像是8月3就已经出了），最近就在玩这个游戏，感觉挺有意思的，你们要是感兴趣可以去他们的官网看一下</p>
-<p><a target="_blank" rel="noopener" href="https://bluearchive-cn.com">国服</a><br>
-<a target="_blank" rel="noopener" href="https://bluearchive.nexon.com/home">国际服</a></p>
-<p>我个人觉得这个游戏做的挺好的，游戏主要风格是2.5D，Q版人物（关卡外不是Q版），主打的是休闲，不管是人物的技能也好，立绘也罢，个人感觉都不错。还有就是代理（星啸），我觉得接手的还不错（当然也不能随便下定论），除了有一点我不满意，就是一些gui是重绘的，给你们上图片吧</p>
-<p>国际服的任务页面：<br>
-<img src="" alt=""></p>
-<p>国服任务页面：<br>
-<img src="" alt=""></p>
-<p>国际服剧情页面：<br>
-<img src="" alt=""></p>
-<p>国服剧情页面：<br>
-<img src="" alt=""></p>
-<p>因为一些不可抗力的原因，上面图片可能无法正常展示</p>
-<p>我主要看重的是这个游戏的剧情，你们也可以自己去查一下ba的剧情，还是挺有意思的，不过那个一周目…（一言难尽），一周目的惨象有很多，比如最耳熟能详的白子黑化，但其实还有更惨的，比如很多学生不想面对现实选择紫砂，一些sensei的真爱为了保护sensei而战死之类，但你要相信，a的结局永远是好的，一周目看看就得了，别太记得就行，否则你会将一周目带入到二周目，那样就真正的体会不到剧情给你的乐趣了</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%8B%97%E5%8F%AB/" rel="tag">狗叫</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-   
-  
-</article>
-
-    
-    <article
-  id="post-sunnb自制1-19-4整合包"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/07/30/sunnb%E8%87%AA%E5%88%B61-19-4%E6%95%B4%E5%90%88%E5%8C%85/"
-    >sunnb自制1.19.4整合包</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/07/30/sunnb%E8%87%AA%E5%88%B61-19-4%E6%95%B4%E5%90%88%E5%8C%85/" class="article-date">
-  <time datetime="2023-07-30T10:25:54.000Z" itemprop="datePublished">2023-07-30</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%B8%B8%E6%88%8F/">游戏</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>在今天，我终于将sunnb整合包系列的第一部做好了！</p>
-<p>这个整合包是一个1.19.4的整合包，包含fabric端的200多个mod，多为优化mod，如元素周期表几件套、树叶/实体渲染优化等mod，同时也包含旅行者背包等的玩法拓展mod以及HUD+等的生存辅助mod，其他的mod我就不一一举例了，下载整合包解压，在mod文件夹中自行查看，我也将每个mod翻译成了中文，用[]引用在mod名中。</p>
-<p>同时，问你们一个问题：你还在为mod没有汉化而苦恼吗？你还在为mod都是英文而烦躁吗？现在介绍：sunnb汉化补充包定制版。为每个整合包用心定制，汉化覆盖率达到97.8%！我不为别的，只为使用这个整合包的人能用的舒服，因为只有这样，才不辜负我对这个游戏的热爱！不辜负sunnb系列整合包的支持者！</p>
-<p>至此，致谢</p>
-<p>下载地址:<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1v1wCUVw3_Np2wyL7E5feuQ?pwd=1145">点我下载</a></p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%B8%B8%E6%88%8F/" rel="tag">游戏</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-   
-  
-</article>
-
-    
-    <article
   id="post-奇思与妙想第二章"
   class="article article-type-post"
   itemscope
@@ -873,14 +732,253 @@ wx:sunyihanznb<br>
 </article>
 
     
+    <article
+  id="post-保密文章2"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2023/06/30/%E4%BF%9D%E5%AF%86%E6%96%87%E7%AB%A02/"
+    >保密文章2</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2023/06/30/%E4%BF%9D%E5%AF%86%E6%96%87%E7%AB%A02/" class="article-date">
+  <time datetime="2023-06-30T07:04:00.000Z" itemprop="datePublished">2023-06-30</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%9E%8E%E5%86%99%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/">瞎写的一些东西</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  有东西被加密了, 请输入密码查看. 
+      <a class="article-more-link" href="/2023/06/30/%E4%BF%9D%E5%AF%86%E6%96%87%E7%AB%A02/"
+        >阅读更多...</a
+      >
+       
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8A%A0%E5%AF%86/" rel="tag">加密</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+  
+</article>
+
+    
+    <article
+  id="post-保密文章"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2023/06/21/%E4%BF%9D%E5%AF%86%E6%96%87%E7%AB%A0/"
+    >保密文章</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2023/06/21/%E4%BF%9D%E5%AF%86%E6%96%87%E7%AB%A0/" class="article-date">
+  <time datetime="2023-06-21T13:27:35.000Z" itemprop="datePublished">2023-06-21</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%9E%8E%E5%86%99%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/">瞎写的一些东西</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  有东西被加密了, 请输入密码查看. 
+      <a class="article-more-link" href="/2023/06/21/%E4%BF%9D%E5%AF%86%E6%96%87%E7%AB%A0/"
+        >阅读更多...</a
+      >
+       
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8A%A0%E5%AF%86/" rel="tag">加密</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+  
+</article>
+
+    
+    <article
+  id="post-奇思与妙想第一章"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2023/06/17/%E5%A5%87%E6%80%9D%E4%B8%8E%E5%A6%99%E6%83%B3%E7%AC%AC%E4%B8%80%E7%AB%A0/"
+    >奇思与妙想第一章</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2023/06/17/%E5%A5%87%E6%80%9D%E4%B8%8E%E5%A6%99%E6%83%B3%E7%AC%AC%E4%B8%80%E7%AB%A0/" class="article-date">
+  <time datetime="2023-06-16T22:45:58.000Z" itemprop="datePublished">2023-06-17</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%9E%8E%E5%86%99%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/">瞎写的一些东西</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>回到家后，你忽忙洗完澡便去睡觉了。</p>
+<p>第二天，你被闹钟吵醒，洗濑后，你打开了电视看孙牛的频道，但这时，电视突然换台：“紧急插播一条新闻，就在刚刚，我市孙牛核电站遭受不明攻击，20万吨左右放射性材料泄露，工作人员正在紧急抢救。据专家预计，这场事故将造成周围半径1004米内受到影响····”你瞳孔地震：“孙牛核电站？！不就在我家边上吗！核泄露！”你忽忙的从桌上抓起一包压缩饼干并带上钥匙，开车赶往了孙牛核电站。</p>
+<p>明明还没到早高峰，但路上已经水泄不通－大家都在赶往孙牛B核电站。这时，一辆<br>
+车突然失控般撞到了一面墙上，一个人僵硬地爬出来，但你发现，那人眼暗中竟没有黑色部分！</p>
+<p>只见那人见人就咬，且被咬的人不出三分钟，便会双眼上翻，变得和那人一样，只剩一片眼<br>
+白，见人就咬。周围人四处逃跑，原本混乱的路变的更加混乱，周围四处是人撕心裂肺的叫声，喊声。你躲进了后备箱中以防止被“他”们发现，并拿出手坤，打妖妖您，但根本没有人接，也对，妖妖您说不定也被攻击了。</p>
+<p>这时，一条短信发来，一看，是你的好基友彭于晏给你发来的：</p>
+<p>Hi! How’s it going?I’m not good, There are so many zombies on the strert, I can’t go out.Where are you?I think you can help me to go out, In the end, I’m in my house on sunnb Street.Good luck!<br>
+（你好！你现在可好？我并不很好。现在有很多僵尸在街上，我不能出去。你在哪？我为你可以帮助我出去。最后，我在Sunnb街上。祝你好运！）</p>
+<p>你无语但没办法，一个翻身跳回驾位。一启动发动机，一群丧尸向你冲来，但你横直撞，撞开一条道路。</p>
+<p>到达Sunnb街时，路上果然有许多丧尸，你将它们撞开后，停车，并从座椅底下拿出把之前露营时拿的野营斧，之后便冲进了彭于晏家。一进门，一群丧尸向怀冲来，你一斧一个。清理完一楼丧尸，你没发现彭于晏，于是向二楼走去，但突然，一只丧尸向你抓来，你没躲过，被它摁在地上，眼看就要咬到你（快速按A键挣脱（笑）），彭于晏突然出现，将丧尸打倒在地。</p>
+<p>“你不是可以出来嘛！还非要我来。”你有些气的说：“害我差点升天了。”但彭于晏却说“我叫你来那肯定是有目的的。跟你说，今天有人给我发了一条短信，你猜是谁？”边说有于晏边打开了手坤。<br>
+“是谁？”“NASA（美国航天局）！”啊？NASA给你发消息干啥？”“嘿，他们说看上我了，让我去总部报到呢！”彭于晏打开了一条短信，将手坤递给你，你一看，果真是NASA发来的：（翻译后内容）</p>
+<p>尊敬的彭于晏先生，您好！由于您骨骼惊奇，现将您例入“希望1号”航天员名单。“希望”工程是为了寻找消除人类异常症状的解药，我们已经发现，存在于室女座超星系团中，有一颗名为COIVO-12的无主行星，表面的一种名为Ho2的物质可以消除人类y型染色体中第27635列脱氧双旋结构体变异。您可以共带2名船员。</p>
+<p>“所以说·····你想带我去？”“可不是！他们还说机票他们出，包吃包住！”彭于晏说：“怎样？要不要和我一起？”但这时，门被撞开，一个只因肉男向你们冲来，你赶紧拉起彭于晏就跑，跑到车前，只因肉男还紧追不舍，你们跳上了车，你猛踩油门，飞一般的冲了出去······<br>
+第一章 完</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%A5%87%E6%80%9D%E4%B8%8E%E5%A6%99%E6%83%B3/" rel="tag">奇思与妙想</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+  
+</article>
+
+    
+    <article
+  id="post-奇思与妙想序章"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2023/06/05/%E5%A5%87%E6%80%9D%E4%B8%8E%E5%A6%99%E6%83%B3%E5%BA%8F%E7%AB%A0/"
+    >奇思与妙想序章</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2023/06/05/%E5%A5%87%E6%80%9D%E4%B8%8E%E5%A6%99%E6%83%B3%E5%BA%8F%E7%AB%A0/" class="article-date">
+  <time datetime="2023-06-05T13:35:49.000Z" itemprop="datePublished">2023-06-05</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%9E%8E%E5%86%99%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/">瞎写的一些东西</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>你，一个聪明绝顶的从事IT的技术人员。这天，无良老板强制让你加班，且不给加班费，下班时，已是晚上十二点半。</p>
+<p>为了更快回家，你抄了一条小路，它荒草萋萋，十分幽静（串台了）。这条路是一条小巷，一路并没有灯，远处似乎还有一个影子若隐若现。你有些害怕，但你看了一眼手上的“皇帝的新手表”，已是十二点四十，要是走大路似乎走到凌晨都到不了。没办法，你吱咬牙：“害，肯定是我加班加出幻觉了，现实世界怎么可能有鬼？”</p>
+<p>你走进了那条小巷，无尽的黑暗马上笼罩了你，你马上拿出手坤，但无论你怎么按电源手坤就是不亮。“他奶奶的，这个手机怎么这么优雅啊？！关键时没电。”你十分生气但无奈地说。你只好壮着胆子继续走，但你越往深处走，光亮就越少。突然，你好像撞到了一个人！你撒腿就跑，但那似乎也在追你，但这时，你被一个东西拌了一下，摔倒在地，你身后的脚步却没有停止，那声音来到你面前停下，你惊恐的望着声音的方向，但从黑暗中只是丢出一张照片，你拿起来一看，上面是CCTV报道的一则新闻，内容是“孙牛核电站遭受不明攻击，20万吨放射性材料泄露”但惊恐万分的你并未管这么多，拿起照片便跑回家了。</p>
+<p>序章 完</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%A5%87%E6%80%9D%E4%B8%8E%E5%A6%99%E6%83%B3/" rel="tag">奇思与妙想</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+  
+</article>
+
+    
   </article>
   
 
-  
-  <nav class="page-nav">
-    
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
-  </nav>
   
 </section>
 </div>

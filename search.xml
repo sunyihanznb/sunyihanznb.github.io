@@ -1,21 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>文章投稿</title>
-    <url>/2023/06/20/%E6%96%87%E7%AB%A0%E6%8A%95%E7%A8%BF/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本网站开启投稿了！">本网站开启投稿了！</h3>
-<p>由于我实在是知识浅薄，建了网站不知道发什么，所以我决定开放投稿渠道，任何人都可以通过联系方式联系我，并将自己写好的文章发给我，我将在阅读并稍微修改后注明出处上传</p>
-<p>联系方式：<br>
-电话：18186575048<br>
-QQ:2188384228<br>
-wx:sunyihanznb<br>
-<a href="mailto:email:sunyihanznb@outlook.com">email:sunyihanznb@outlook.com</a></p>
+    <title>Markdown文档讲解</title>
+    <url>/2024/02/17/Markdown%E6%96%87%E6%A1%A3%E8%AE%B2%E8%A7%A3/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="表格-文本样式">表格 &amp; 文本样式</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">样式</th>
+<th>语法</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">加粗</td>
+<td>前后 <code>**</code> 或  <code>__</code></td>
+<td><strong>加粗1</strong> <strong>加粗2</strong></td>
+</tr>
+<tr>
+<td style="text-align:center">斜体</td>
+<td>前后 <code>*</code> 或  <code>_</code></td>
+<td><em>斜体1</em> <em>斜体2</em></td>
+</tr>
+<tr>
+<td style="text-align:center">删除线</td>
+<td>前后 <code>~~</code></td>
+<td><s>删除线</s></td>
+</tr>
+<tr>
+<td style="text-align:center">内联代码</td>
+<td>前后 `</td>
+<td><code>code</code></td>
+</tr>
+<tr>
+<td style="text-align:center">下划线</td>
+<td>前 <code>&lt;u&gt;</code>  后 <code>&lt;/u&gt;</code></td>
+<td><u>下划线</u></td>
+</tr>
+<tr>
+<td style="text-align:center">高亮</td>
+<td>前后 <code>==</code></td>
+<td>==高亮文本==</td>
+</tr>
+</tbody>
+</table>
+<h2 id="引用">引用</h2>
+<blockquote>
+<p>sunnb</p>
+</blockquote>
+<h2 id="链接">链接</h2>
+<p><em>鼠标右击</em> 或 <em>Ctrl 键 + 点击</em> 系统默认浏览器打开链接</p>
+<p><a href="https://sunnb.xn--kivy66br3pu7d.top/">sunnb官网</a></p>
+<h2 id="图片">图片</h2>
+<p>拖放图片文件、粘贴截图可直接将图片源数据存储到笔记中</p>
+<p><img src="%5Cimages%5Cpack.png" alt=""></p>
+<p><em>图片可拖动为文件到任意窗口使用</em></p>
+<h2 id="无序列表">无序列表</h2>
+<ul>
+<li>项目
+<ul>
+<li>项目 1
+<ul>
+<li>项目 A</li>
+<li>项目 B</li>
+</ul>
+</li>
+<li>项目 2</li>
+</ul>
+</li>
+</ul>
+<h2 id="有序列表">有序列表</h2>
+<ol>
+<li>项目 1
+<ol>
+<li>项目 A</li>
+<li>项目 B</li>
+</ol>
+</li>
+<li>项目 2</li>
+</ol>
+<h2 id="任务列表">任务列表</h2>
+<ul>
+<li>[x] A 计划
+<ul>
+<li>[x] A1 计划</li>
+<li>[ ] A2 计划</li>
+</ul>
+</li>
+<li>[ ] B 计划</li>
+</ul>
+<h2 id="代码块">代码块</h2>
+<p>代码块支持 168 种编程语言</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// javascript 冒泡排序</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">bubbleSort</span>(<span class="params">array</span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> swapped = <span class="literal">true</span>;</span><br><span class="line">  <span class="keyword">do</span> &#123;</span><br><span class="line">    swapped = <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> j = <span class="number">0</span>; j &lt; array.<span class="property">length</span>; j++) &#123;</span><br><span class="line">      <span class="keyword">if</span> (array[j] &gt; array[j + <span class="number">1</span>]) &#123;</span><br><span class="line">        <span class="keyword">let</span> temp = array[j];</span><br><span class="line">        array[j] = array[j + <span class="number">1</span>];</span><br><span class="line">        array[j + <span class="number">1</span>] = temp;</span><br><span class="line">        swapped = <span class="literal">true</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125; <span class="keyword">while</span> (swapped);</span><br><span class="line">  <span class="keyword">return</span> array;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="KaTeX-数学公式"><a href="https://katex.org">KaTeX</a> 数学公式</h2>
+<h3 id="内联公式">内联公式</h3>
+<p>质能方程 $E=mc^2$</p>
+<h3 id="公式块">公式块</h3>
+<p>$$<br>
+\displaystyle \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)<br>
+$$</p>
+<h1>应用介绍</h1>
+<h2 id="特性">特性</h2>
+<ol>
+<li>极佳的 Markdown 编辑体验，实时预览、存储</li>
+<li>与传统富文本编辑方式结合，支持通用快捷键</li>
+<li>可导出为 Markdown(.md文件)、html、PDF、图片</li>
+<li>可分离出多个窗口，同时编辑(参考)多个笔记</li>
+<li>可快速搜索全部笔记内容</li>
+<li>笔记名称可设置为 uTools 关键字，外围快速打开该笔记</li>
+</ol>
+<h2 id="使用技巧">使用技巧</h2>
+<ol>
+<li>左侧笔记名称，<strong>上下拖动调整位置</strong>，<em>鼠标右击</em> 显示操作菜单</li>
+<li>当焦点未在编辑器，键盘上下方向键、 <code>Tab</code> 键切换笔记</li>
+<li>当焦点未在编辑器，<code>Enter</code> 进入编辑</li>
+<li><code>Command/Ctrl+F</code> 焦点切换到搜索</li>
+<li>编辑器中列表编辑时，按 <code>Tab</code> 变子项，<code>Shift + Tab</code> 恢复</li>
+</ol>
+<h2 id="笔记数据存储位置">笔记数据存储位置</h2>
+<p>笔记内容和图片均<strong>存储在本地磁盘</strong>数据库(uTools 提供的底层数据库)，在 uTools 主程序界面「帐号与数据」中开启数据同步，则你的笔记数据将会实时同步备份到 uTools 的数据服务器</p>
 ]]></content>
       <categories>
-        <category>公告</category>
+        <category>正片</category>
       </categories>
       <tags>
-        <tag>狗叫</tag>
+        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -117,29 +227,6 @@ wx:sunyihanznb<br>
       </tags>
   </entry>
   <entry>
-    <title>That eyes</title>
-    <url>/2023/12/23/That-eyes/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>友人，你可知你眼睛的美丽？</p>
-<p>一次偶然的相遇，让我确信，世界上最美的，是你的眼睛</p>
-<p>那吸收了所有波长的黑色眸子，在阳光下反射出灿烂的虹光；那深邃的眼神，直触我的心灵</p>
-<p>你的眼睛如那遥不可及的黑洞般，用你那巨大的引力，使光都无法逃逸</p>
-<p>你的眼睛不断扭曲着周围的时空，使我不断陷进</p>
-<p>而我突然却发现了那一束光，如奇点般使人惊喜</p>
-<p>那是情绪的赞歌，是生命的绽放！</p>
-<p>但对于我来说，却是如此的，遥不可及</p>
-<p>位于平行宇宙的我已然苏醒</p>
-<p>相对论也已经看腻</p>
-<p>但我却不曾忘记</p>
-<p>你的眼睛</p>
-]]></content>
-      <categories>
-        <category>瞎写的一些东西</category>
-      </categories>
-      <tags>
-        <tag>狗叫</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>奇思与妙想之三班传奇第一章-第三章</title>
     <url>/2023/12/01/%E5%A5%87%E6%80%9D%E4%B8%8E%E5%A6%99%E6%83%B3%E4%B9%8B%E4%B8%89%E7%8F%AD%E4%BC%A0%E5%A5%87%E7%AC%AC%E4%B8%80%E7%AB%A0-%E7%AC%AC%E4%B8%89%E7%AB%A0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://pic.imgdb.cn/item/6569dfecc458853aefa67862.jpg" alt=""></p>
@@ -188,60 +275,6 @@ wx:sunyihanznb<br>
       </categories>
       <tags>
         <tag>通知</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>公告</title>
-    <url>/2023/10/03/%E5%85%AC%E5%91%8A/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="此网站可能不会再更新《奇思与妙想》">此网站可能不会再更新《奇思与妙想》</h3>
-<p>由于某些不可抗因素，此网站将停更《奇思与妙想》，还请谅解</p>
-]]></content>
-      <categories>
-        <category>公告</category>
-      </categories>
-      <tags>
-        <tag>通知</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>对于ba的感叹</title>
-    <url>/2023/08/29/%E5%AF%B9%E4%BA%8Eba%E7%9A%84%E6%84%9F%E5%8F%B9/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>最近蔚蓝档案国服不是出了嘛（虽然好像是8月3就已经出了），最近就在玩这个游戏，感觉挺有意思的，你们要是感兴趣可以去他们的官网看一下</p>
-<p><a href="https://bluearchive-cn.com">国服</a><br>
-<a href="https://bluearchive.nexon.com/home">国际服</a></p>
-<p>我个人觉得这个游戏做的挺好的，游戏主要风格是2.5D，Q版人物（关卡外不是Q版），主打的是休闲，不管是人物的技能也好，立绘也罢，个人感觉都不错。还有就是代理（星啸），我觉得接手的还不错（当然也不能随便下定论），除了有一点我不满意，就是一些gui是重绘的，给你们上图片吧</p>
-<p>国际服的任务页面：<br>
-<img src="" alt=""></p>
-<p>国服任务页面：<br>
-<img src="" alt=""></p>
-<p>国际服剧情页面：<br>
-<img src="" alt=""></p>
-<p>国服剧情页面：<br>
-<img src="" alt=""></p>
-<p>因为一些不可抗力的原因，上面图片可能无法正常展示</p>
-<p>我主要看重的是这个游戏的剧情，你们也可以自己去查一下ba的剧情，还是挺有意思的，不过那个一周目…（一言难尽），一周目的惨象有很多，比如最耳熟能详的白子黑化，但其实还有更惨的，比如很多学生不想面对现实选择紫砂，一些sensei的真爱为了保护sensei而战死之类，但你要相信，a的结局永远是好的，一周目看看就得了，别太记得就行，否则你会将一周目带入到二周目，那样就真正的体会不到剧情给你的乐趣了</p>
-]]></content>
-      <categories>
-        <category>瞎写的一些东西</category>
-      </categories>
-      <tags>
-        <tag>狗叫</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>sunnb自制1.19.4整合包</title>
-    <url>/2023/07/30/sunnb%E8%87%AA%E5%88%B61-19-4%E6%95%B4%E5%90%88%E5%8C%85/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>在今天，我终于将sunnb整合包系列的第一部做好了！</p>
-<p>这个整合包是一个1.19.4的整合包，包含fabric端的200多个mod，多为优化mod，如元素周期表几件套、树叶/实体渲染优化等mod，同时也包含旅行者背包等的玩法拓展mod以及HUD+等的生存辅助mod，其他的mod我就不一一举例了，下载整合包解压，在mod文件夹中自行查看，我也将每个mod翻译成了中文，用[]引用在mod名中。</p>
-<p>同时，问你们一个问题：你还在为mod没有汉化而苦恼吗？你还在为mod都是英文而烦躁吗？现在介绍：sunnb汉化补充包定制版。为每个整合包用心定制，汉化覆盖率达到97.8%！我不为别的，只为使用这个整合包的人能用的舒服，因为只有这样，才不辜负我对这个游戏的热爱！不辜负sunnb系列整合包的支持者！</p>
-<p>至此，致谢</p>
-<p>下载地址:<a href="https://pan.baidu.com/s/1v1wCUVw3_Np2wyL7E5feuQ?pwd=1145">点我下载</a></p>
-]]></content>
-      <categories>
-        <category>游戏</category>
-      </categories>
-      <tags>
-        <tag>游戏</tag>
       </tags>
   </entry>
   <entry>
@@ -345,22 +378,6 @@ wx:sunyihanznb<br>
       </tags>
   </entry>
   <entry>
-    <title>小练笔</title>
-    <url>/2023/06/06/%E5%B0%8F%E7%BB%83%E7%AC%94/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="这只是一个小练笔">这只是一个小练笔</h3>
-<p>在我买面时，偶遇了她</p>
-<p>只见她单肩背包，从容不迫地走进面馆，她似乎经常来这里，老板一看见她就问：“拉面是吧？”，而她轻轻将额头上的细发抚到耳旁，又如蜻蜓点水般点了点头，之后便伫立在那儿。</p>
-<p>清风拂过，我想起以前曾赵州对我说的：“她就是个sb，不叫东西”但据我看，她也并非如曾赵州所说那样一无是处或性格不好，那可能也只是他个人看法吧，也许他对她是有偏见的，说不定呢。</p>
-<p>在我形式性地感叹她在这时出现时，她却只是稍微转过头来，微微一笑，便沉默不语。</p>
-]]></content>
-      <categories>
-        <category>瞎写的一些东西</category>
-      </categories>
-      <tags>
-        <tag>狗叫</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>奇思与妙想序章</title>
     <url>/2023/06/05/%E5%A5%87%E6%80%9D%E4%B8%8E%E5%A6%99%E6%83%B3%E5%BA%8F%E7%AB%A0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>你，一个聪明绝顶的从事IT的技术人员。这天，无良老板强制让你加班，且不给加班费，下班时，已是晚上十二点半。</p>
@@ -373,47 +390,6 @@ wx:sunyihanznb<br>
       </categories>
       <tags>
         <tag>奇思与妙想</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>奇思与妙想发布公告</title>
-    <url>/2023/06/05/%E5%A5%87%E6%80%9D%E4%B8%8E%E5%A6%99%E6%83%B3%E5%8F%91%E5%B8%83%E5%85%AC%E5%91%8A/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="奇思与妙想将会在以后发布于此网站">奇思与妙想将会在以后发布于此网站</h3>
-<p>由于毛毛的不可抗力，我写的两册奇思与妙想被迫撕毁，但这阻挡不了我对奇思与妙想的热爱与追求，我还有那么多奇思与妙想的忠实读者，我要是放弃了奇思与妙想，岂不是辜负了读者们对奇思与妙想的热爱？！</p>
-<p>最终，我选择在此网站发布奇思与妙想，既可以逃过毛毛的追查，还不会影响奇思与妙想的正常写</p>
-]]></content>
-      <categories>
-        <category>公告</category>
-      </categories>
-      <tags>
-        <tag>通知</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>网站的建立</title>
-    <url>/2023/05/26/%E7%BD%91%E7%AB%99%E7%9A%84%E5%BB%BA%E7%AB%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="如你所见，这是一个由我自己搭建的个人网站">如你所见，这是一个由我自己搭建的个人网站</h3>
-<p>其实搭建这个网站的动机其实很简单：不想玩游戏，纯闲的，并且我比较喜欢折腾</p>
-<p>那么这个网站是如何搭建的呢？首先你要知道一个东西叫“Node.js”，你可以通过这个链接访问它的官网：<a href="https://nodejs.org/en" title="点我查看官网">Node.js</a>，那么，这个东西是干什么的呢？其实他是一个java的运行环境，也同时是为了后面的一个东西：<a href="http://hexo.io/zh-cn/index.html">hexo</a>，这是一个博客框架，但安装这个需要git，应为不用vpn下载很慢，所以给大家放<a href="https://xiaoyuboi.lanzoum.com/b0c5k65ih">蓝奏云</a>链接，之后需要用到gitee的pages服务进行托管，在无数次修bug，改代码后，这个网站便诞生了</p>
-]]></content>
-      <categories>
-        <category>瞎写的一些东西</category>
-      </categories>
-      <tags>
-        <tag>狗叫</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一篇文章</title>
-    <url>/2023/05/01/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="你们都是坤坤，还没有我nb">你们都是坤坤，还没有我nb</h3>
-<p>我看你们就是太逊了，连一个网站都没有，我这个这么nb，还不花钱</p>
-]]></content>
-      <categories>
-        <category>瞎写的一些东西</category>
-      </categories>
-      <tags>
-        <tag>狗叫</tag>
       </tags>
   </entry>
 </search>
